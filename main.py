@@ -1,6 +1,7 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os
+import os, sys
 from IPython import embed
 import pandas as pd
 import numpy as np
@@ -35,5 +36,6 @@ def main(objective, data_input_path):
 	return True
 
 if __name__ == '__main__':
-    main("data_insertion", "/home/sahit/Documents/Material_Science_Project/materials_param_noUnits.csv")
+	# main("data_insertion", "/home/sahit/Documents/Material_Science_Project/materials_param_noUnits.csv")
+	main(sys.argv[1], sys.argv[2])
 
